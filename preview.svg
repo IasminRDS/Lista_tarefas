@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" font-family="Segoe UI, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+    <filter id="sombra" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <rect x="60" y="40" width="480" height="520" rx="16" fill="#ffffff" filter="url(#sombra)"/>
+
+  <!-- Título -->
+  <text x="90" y="100" font-size="26" font-weight="bold" fill="#333">📝 Minhas Tarefas</text>
+  <circle cx="500" cy="92" r="18" fill="#f2f0f7"/>
+  <text x="500" y="99" font-size="18" text-anchor="middle">🌙</text>
+
+  <!-- Campo de entrada -->
+  <rect x="90" y="130" width="290" height="46" rx="8" fill="#f7f7f9" stroke="#764ba2" stroke-width="2"/>
+  <text x="104" y="159" font-size="15" fill="#999">O que precisa ser feito?</text>
+  <rect x="392" y="130" width="118" height="46" rx="8" fill="#764ba2"/>
+  <text x="451" y="159" font-size="15" fill="#fff" text-anchor="middle">Adicionar</text>
+
+  <!-- Filtros -->
+  <rect x="90" y="192" width="135" height="36" rx="8" fill="#764ba2"/>
+  <text x="157" y="215" font-size="14" fill="#fff" text-anchor="middle">Todas</text>
+  <rect x="233" y="192" width="135" height="36" rx="8" fill="#f7f7f9"/>
+  <text x="300" y="215" font-size="14" fill="#888" text-anchor="middle">Ativas</text>
+  <rect x="376" y="192" width="134" height="36" rx="8" fill="#f7f7f9"/>
+  <text x="443" y="215" font-size="14" fill="#888" text-anchor="middle">Concluídas</text>
+
+  <!-- Tarefa 1 (concluída) -->
+  <rect x="90" y="248" width="420" height="50" rx="8" fill="#f7f7f9"/>
+  <rect x="104" y="265" width="16" height="16" rx="3" fill="#764ba2"/>
+  <text x="111" y="278" font-size="12" fill="#fff" text-anchor="middle">✓</text>
+  <text x="134" y="279" font-size="15" fill="#aaa" text-decoration="line-through">Estudar Python</text>
+  <text x="490" y="279" font-size="16" fill="#e74c3c" text-anchor="middle">✕</text>
+
+  <!-- Tarefa 2 -->
+  <rect x="90" y="308" width="420" height="50" rx="8" fill="#f7f7f9"/>
+  <rect x="104" y="325" width="16" height="16" rx="3" fill="#fff" stroke="#ccc" stroke-width="2"/>
+  <text x="134" y="339" font-size="15" fill="#333">Montar o portfólio</text>
+  <text x="490" y="339" font-size="16" fill="#e74c3c" text-anchor="middle">✕</text>
+
+  <!-- Tarefa 3 -->
+  <rect x="90" y="368" width="420" height="50" rx="8" fill="#f7f7f9"/>
+  <rect x="104" y="385" width="16" height="16" rx="3" fill="#fff" stroke="#ccc" stroke-width="2"/>
+  <text x="134" y="399" font-size="15" fill="#333">Subir projetos no GitHub</text>
+  <text x="490" y="399" font-size="16" fill="#e74c3c" text-anchor="middle">✕</text>
+
+  <!-- Rodapé -->
+  <text x="90" y="470" font-size="14" fill="#888">2 pendente(s) de 3</text>
+  <text x="510" y="470" font-size="14" fill="#888" text-anchor="end" text-decoration="underline">Limpar concluídas</text>
+</svg>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📝 Minhas Tarefas</h1>
+      <button id="tema" class="tema" title="Alternar tema" aria-label="Alternar tema">🌙</button>
+    </header>
+
+    <form id="form-tarefa">
+      <input type="text" id="input-tarefa" placeholder="O que precisa ser feito?" autocomplete="off" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="ativas">Ativas</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <ul id="lista"></ul>
+
+    <p id="vazio" class="vazio">Nenhuma tarefa por aqui. Adicione uma! ✨</p>
+
+    <footer>
+      <span id="contador"></span>
+      <button id="limpar" class="limpar">Limpar concluídas</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

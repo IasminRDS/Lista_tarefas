@@ -1,0 +1,201 @@
+:root {
+  --bg: linear-gradient(135deg, #667eea, #764ba2);
+  --card: #ffffff;
+  --texto: #333333;
+  --texto-suave: #888888;
+  --item: #f7f7f9;
+  --borda: #e0e0e0;
+  --primaria: #764ba2;
+  --primaria-hover: #5a3780;
+  --perigo: #e74c3c;
+}
+
+[data-tema="escuro"] {
+  --bg: linear-gradient(135deg, #1e1e2f, #2d2b42);
+  --card: #26263a;
+  --texto: #f0f0f5;
+  --texto-suave: #9a9ab0;
+  --item: #32324a;
+  --borda: #3d3d5c;
+  --primaria: #9d7bd4;
+  --primaria-hover: #b192e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  transition: background 0.3s;
+}
+
+.container {
+  background: var(--card);
+  width: 100%;
+  max-width: 480px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--texto);
+  font-size: 24px;
+}
+
+.tema {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid var(--borda);
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: var(--item);
+  color: var(--texto);
+}
+
+input[type="text"]:focus {
+  border-color: var(--primaria);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+form button {
+  padding: 12px 18px;
+  background: var(--primaria);
+  color: #fff;
+}
+
+form button:hover {
+  background: var(--primaria-hover);
+}
+
+.filtros {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.filtro {
+  flex: 1;
+  padding: 8px;
+  background: var(--item);
+  color: var(--texto-suave);
+}
+
+.filtro.ativo {
+  background: var(--primaria);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--item);
+  margin-bottom: 8px;
+}
+
+li.concluida span.texto {
+  text-decoration: line-through;
+  color: var(--texto-suave);
+}
+
+li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--primaria);
+}
+
+span.texto {
+  flex: 1;
+  cursor: pointer;
+  word-break: break-word;
+  color: var(--texto);
+}
+
+span.texto:focus {
+  outline: 2px dashed var(--primaria);
+  border-radius: 4px;
+}
+
+.remover {
+  background: transparent;
+  color: var(--perigo);
+  padding: 4px 8px;
+  font-size: 18px;
+}
+
+.remover:hover {
+  background: rgba(231, 76, 60, 0.15);
+}
+
+.vazio {
+  text-align: center;
+  color: var(--texto-suave);
+  padding: 20px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+.limpar {
+  background: transparent;
+  color: var(--texto-suave);
+  padding: 4px 8px;
+  text-decoration: underline;
+}
+
+.limpar:hover {
+  color: var(--perigo);
+}
