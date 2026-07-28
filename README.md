@@ -40,3 +40,11 @@ Abra o arquivo `index.html` no navegador. Nenhuma instalação necessária.
 - Eventos e delegação
 - Persistência de dados no cliente
 - Design responsivo e acessível (ARIA labels)
+
+## 📄 Licença
+
+MIT — veja [LICENSE](./LICENSE).
+
+---
+
+Feito por **Iasmin Ribeiro de Souza** · [LinkedIn](https://www.linkedin.com/in/iasmin-ribeiro-de-souza-033536401) · [GitHub](https://github.com/IasminRDS)

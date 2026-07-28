@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+build/
+*.log
+
+# Segredos — nunca versionar
+.env
+.env.*
+!.env.example
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
