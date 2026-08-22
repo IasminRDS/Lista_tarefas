@@ -6,12 +6,7 @@
 
 Aplicação web para gerenciar tarefas, com dados salvos no navegador.
 
-![Prévia da Lista de Tarefas](preview.svg)
-
-> 💡 A imagem acima é uma prévia da interface. Para um resultado ainda melhor no
-> portfólio, substitua `preview.svg` por um **screenshot** ou **GIF** real do app
-> em uso (dá para gravar a tela com ferramentas como ScreenToGif ou o próprio
-> Xbox Game Bar do Windows: `Win + G`).
+![Prévia da Lista de Tarefas](preview.png)
 
 ## ✨ Funcionalidades
 
