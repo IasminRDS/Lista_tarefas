@@ -6,6 +6,8 @@
 
 Aplicação web para gerenciar tarefas, com dados salvos no navegador.
 
+🔗 **Demo ao vivo: [iasminrds.github.io/Lista_tarefas](https://iasminrds.github.io/Lista_tarefas/)**
+
 ![Prévia da Lista de Tarefas](preview.png)
 
 ## ✨ Funcionalidades
@@ -21,7 +23,7 @@ Aplicação web para gerenciar tarefas, com dados salvos no navegador.
 
 ## 🚀 Como executar
 
-Abra o arquivo `index.html` no navegador. Nenhuma instalação necessária.
+Basta abrir o [demo](https://iasminrds.github.io/Lista_tarefas/). Para rodar local, abra o `index.html` no navegador — nenhuma instalação necessária.
 
 ## 🛠️ Tecnologias
 
